@@ -18,7 +18,7 @@ const irreg = {
 }
 
 let output = '';
-output += ':white_check_mark:';
+output += ':white_check_mark: ';
 
 let word = message.content.match(/^[^ ]+ [^ ]+ ([^ ]+)/)[1];
 let restRaw = message.content.match(/^[^ ]+ [^ ]+ [^ ]+ (.+)$/);
