@@ -27,7 +27,7 @@ const irreg = {
 };
 
 let output = '';
-output += ':white_check_mark:';
+output += ':white_check_mark: ';
 
 let word = message.content.match(/^[^ ]+ [^ ]+ ([^ ]+)/)[1];
 
@@ -45,14 +45,14 @@ if (bold.includes(word))
 let irregWord;
 if (irregWord = irreg[word])
   output += irregWord;
-
-if (last === 'e')
+else if (last === 'e')
   output += word + 'd';
 else if (word.endsWith('ay'))
   output += word.slice(0, -1) + 'id';
 else if (/[^eiou]y$/.test(word))
   output += word.slice(0, -1) + 'ied';
-output += word + 'ed';
+else
+  output += word + 'ed';
 
 output += ' ' + rest;
 return output;
