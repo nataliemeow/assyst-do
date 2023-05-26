@@ -1,3 +1,12 @@
+---
+
+## Attention
+There are too many exceptions in the English verb system, and I do not want to spend this much effort implementing everything for a purpose like this.
+
+For now, here's some really bad code.
+
+---
+
 # do
 An [Assyst](https://jacher.io/assyst) tag that does what you tell it to.
 
@@ -16,6 +25,7 @@ An example:
   -t do ban everyone on the server
 ✅ banned everyone on the server
 ```
+
 ## License
 [![CC0](https://licensebuttons.net/p/zero/1.0/80x15.png "CC0") I license it under CC0.](LICENSE)
 
